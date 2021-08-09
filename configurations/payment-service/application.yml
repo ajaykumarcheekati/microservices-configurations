@@ -47,5 +47,6 @@ resilience4j:
          limitForPeriod: 2
          limitRefreshPeriod: 60s
      instances:
-       paymentRateLimit: default     
+       paymentRateLimit: 
+         baseConfig: default     
 
