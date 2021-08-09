@@ -1,1 +1,2 @@
 # main application yml file for payment-service
+my.greeting: "Message coming from Remote git Payment-Service"
