@@ -27,7 +27,7 @@ my.greeting: "hello from git app.yml file"
 management:
   endpoints:
     web:
-      base-path: remitter
+      base-path: /remitter/actuator
       exposure:
         include: "*"
 
