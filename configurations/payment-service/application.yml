@@ -37,6 +37,7 @@ my.greeting: "hello from git payment-service "
 management:
   endpoints:
     web:
+      base-path: payment/actuator
       exposure:
         include: "*"
 
