@@ -40,4 +40,12 @@ management:
       base-path: /payment/actuator
       exposure:
         include: "*"
+resilience4j:
+   rateLimiter:
+     configs: 
+       default:
+         limitForPeriod: 2
+         limitRefreshPeriod: 60s
+     instances:
+       paymentRateLimit: default     
 
