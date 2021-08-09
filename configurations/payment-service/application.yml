@@ -1,14 +1,9 @@
 server.port: 8081
 # Spring Boot configuration
 spring:
-  profiles.active: uat
-  application:
-    name: payment-service
   zipkin:
     base-url: http://127.0.0.1:9411/
-    
-  profiles:
-    active: development
+
   # Database
   datasource:
     driver-class-name: org.postgresql.Driver
