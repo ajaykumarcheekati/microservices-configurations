@@ -31,7 +31,7 @@ eureka:
 spring.cloud.config.uri: http://localhost:8888/
 #spring.cloud.config.enabled: true
 
-my.greeting: "hello from git payment-service "
+my.greeting: "hello from git payment-service to test base-path"
 
 
 management:

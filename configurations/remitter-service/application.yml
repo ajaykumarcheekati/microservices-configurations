@@ -22,7 +22,7 @@ eureka:
 spring.cloud.config.uri: http://localhost:8888/
 #spring.cloud.config.enabled: true
 
-my.greeting: "hello from git app.yml file"
+my.greeting: "hello from git app.yml file - to test base-path"
 
 management:
   endpoints:
