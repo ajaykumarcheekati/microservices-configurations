@@ -1,1 +1,36 @@
-# main application yml file for remitter-service
+server.port: 8082
+# Spring Boot configuration
+spring:
+  application:
+    name: remitter-service
+  profiles:
+    active: development
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
+# Mongo DB props
+  data:
+      mongodb:
+        host: localhost
+        port: 27017
+        database: remitter
+   
+# Connect eureka server
+eureka: 
+   client:
+     serviceUrl:
+       defaultZone: http://peer-1-server.com:7001/eureka, http://peer-2-server.com:7002/eureka, http://peer-3-server.com:7003/eureka
+     registerWithEureka: true
+     fetchRegistry: true
+    
+spring.cloud.config.uri: http://localhost:8888/
+#spring.cloud.config.enabled: true
+
+my.greeting: "hello"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
