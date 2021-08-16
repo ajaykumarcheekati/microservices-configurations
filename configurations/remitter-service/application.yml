@@ -2,8 +2,8 @@ server.port: 8082
 # Spring Boot configuration
 spring:
   security:
-    username: user 
-    password: pwd
+    user.name: user 
+    user.password: pwd
   zipkin:
     base-url: http://127.0.0.1:9411/
 
