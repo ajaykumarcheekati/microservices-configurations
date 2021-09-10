@@ -1,1 +1,22 @@
 my.greeting: "hello from git product-service to test base-path - revise"
+
+
+spring.application.name: product-service
+spring:
+  data:
+      mongodb:
+        host: localhost
+        port: 27017
+        database: ecom
+        
+server.port: 0
+
+eureka.instance.instance-id: ${spring.application.name}:${random.uuid}
+
+# Connect eureka server
+eureka: 
+   client:
+     serviceUrl:
+       defaultZone: http://localhost:8761/eureka
+     registerWithEureka: true
+     fetchRegistry: true
