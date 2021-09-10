@@ -1,13 +1,11 @@
-server.port: 8081
+server.port: 8103
 # Spring Boot configuration
 spring:
-  zipkin:
-    base-url: http://127.0.0.1:9411/
 
   # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/payments
+    url: jdbc:postgresql://localhost:5432/ecom
     username: postgres
     password: 426105
   # JPA properties
@@ -28,25 +26,12 @@ eureka:
      registerWithEureka: true
      fetchRegistry: true
 
-spring.cloud.config.uri: http://localhost:8888/
-#spring.cloud.config.enabled: true
-
-my.greeting: "hello from git payment-service to test base-path - revise"
+my.greeting: "hello from git order-service to test base-path - revise"
 
 
 management:
   endpoints:
     web:
-      base-path: /payment/actuator
+      base-path: /order/actuator
       exposure:
         include: "*"
-resilience4j:
-   rateLimiter:
-     configs: 
-       default:
-         limitForPeriod: 2
-         limitRefreshPeriod: 60s
-     instances:
-       paymentRateLimit: 
-         baseConfig: default     
-
