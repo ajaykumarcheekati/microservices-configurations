@@ -1,6 +1,4 @@
-my.greeting: "hello from git product-service to test base-path - revise"
-spring.cloud.config.uri: http://localhost:8888/
-
+my.greeting: "hello from git product-service - central configuration"
 
 spring.application.name: product-service
 spring:
