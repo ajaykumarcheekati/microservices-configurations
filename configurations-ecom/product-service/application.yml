@@ -1,4 +1,4 @@
-my.greeting: "hello from git product-service - central configuration - control bus"
+my.greeting: "hello from git product-service - central configuration - control bus1"
 
 spring.application.name: product-service
 spring:
