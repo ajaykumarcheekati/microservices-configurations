@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/ecom
-    username: postgres
-    password: 426105
+    #username: postgres
+    #password: 426105
   # JPA properties
   jpa:
     hibernate:
@@ -20,3 +20,6 @@ spring:
     
 server.port: 0
 eureka.instance.instance-id: ${spring.application.name}:${random.uuid}
+
+spring.cloud.bus.id: ${spring.application.name}:${spring.profiles.active}:${random.uuid}
+spring.cloud.bus.enabled: true
