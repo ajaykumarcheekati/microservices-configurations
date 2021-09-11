@@ -1,4 +1,4 @@
-my.greeting: "hello from git product-service - central configuration - final test"
+my.greeting: "hello from git product-service - central configuration - control bus"
 
 spring.application.name: product-service
 spring:
@@ -22,3 +22,5 @@ eureka:
 
 spring.cloud.bus.id: ${spring.application.name}:${spring.profiles.active}:${random.uuid}
 spring.cloud.bus.enabled: true
+spring.cloud.bus.refresh.enabled: true
+spring.cloud.bus.env.enabled: true
