@@ -37,6 +37,6 @@ spring.cloud.bus.env.enabled: true
 management:
   endpoints:
     web:
-      base-path: api/order/actuator
+      base-path: /api/order/actuator
       exposure:
         include: "*"
