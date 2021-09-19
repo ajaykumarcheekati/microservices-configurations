@@ -33,3 +33,9 @@ spring.cloud.bus.id: ${spring.application.name}:${spring.profiles.active}:${rand
 spring.cloud.bus.enabled: true
 spring.cloud.bus.refresh.enabled: true
 spring.cloud.bus.env.enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
